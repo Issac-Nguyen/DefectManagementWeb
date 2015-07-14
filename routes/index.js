@@ -11,7 +11,7 @@ router.get('/sendNotification', function(req, res, next) {
   apn.sendNotification(function(){res.end('success')});
 });
 
-router.post('/uploadDefect', function(req, res, next) {
+router.all('/uploadDefect', function(req, res, next) {
 	console.log(JSON.stringify(req.body));
 	res.end('success');
 })

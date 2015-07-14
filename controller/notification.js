@@ -22,7 +22,7 @@ note.payload = {
     'messageFrom': Date.now().toString()
 };
 
-// note.foreground = "1";
+ note.foreground = "1";
 
 function sendNotification(cb) {
 	apnConnection.pushNotification(note, myDevice);
