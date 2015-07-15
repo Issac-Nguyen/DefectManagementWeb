@@ -13,7 +13,7 @@ router.get('/sendNotification', function(req, res, next) {
 
 router.all('/uploadDefect', function(req, res, next) {
 	console.log(JSON.stringify(req.body));
-	res.end('success');
+	res.json({result: 'success'});
 })
 
 module.exports = router;
