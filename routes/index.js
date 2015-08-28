@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/sendNotification', function(req, res, next) {
-  apn.sendNotification(function(){res.end('success')});
+  apn.sendNotification('986a40d6bebe9f0358478e3dbc7e13693be8b86f370bd5428b303c9dbd3fea1d', function(){res.end('success')});
 });
 
 router.all('/uploadDefect', function(req, res, next) {
